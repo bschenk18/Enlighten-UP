@@ -48,6 +48,7 @@ class QuestionTableViewController: UIViewController, UITableViewDelegate, UITabl
         print(NSPersistentContainer.shared.viewContext.questions)
         questionTableView.delegate = self
         questionTableView.dataSource = self
+        self.hideKeyboardWhenTappedAround()
     }
     
     // MARK: - Table view data source

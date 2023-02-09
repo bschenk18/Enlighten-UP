@@ -25,6 +25,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        self.hideKeyboardWhenTappedAround()
     }
     
     // MARK: - Actions

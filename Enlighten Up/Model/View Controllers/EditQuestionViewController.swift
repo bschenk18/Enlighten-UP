@@ -73,6 +73,7 @@ class EditQuestionViewController: UIViewController {
         questionTextView.text = question?.text
         isTrueFalseSegmentedControl.selectedSegmentIndex = question?.isTrueFalse != false ? 0 : 1
         print(NSPersistentContainer.shared.viewContext.questions)
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewWillAppear(_ animated: Bool) {
